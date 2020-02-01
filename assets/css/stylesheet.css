@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "tripadvisor";
+  src: url("../fonts/tripadvisor.eot");
+  src: url("../fonts/tripadvisor.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/tripadvisor.woff2") format("woff2"),
+    url("../fonts/tripadvisor.woff") format("woff"),
+    url("../fonts/tripadvisor.ttf") format("truetype"),
+    url("../fonts/tripadvisor.svg#tripadvisor") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tripadvisor";
+  src: url("../fonts/tripadvisor_1.eot");
+  src: url("../fonts/tripadvisor_1.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/tripadvisor_1.woff2") format("woff2"),
+    url("../fonts/tripadvisor_1.woff") format("woff"),
+    url("../fonts/tripadvisor_1.ttf") format("truetype"),
+    url("../fonts/tripadvisor_1.svg#tripadvisor") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tripadvisor";
+  src: url("../fonts/tripadvisor_2.eot");
+  src: url("../fonts/tripadvisor_2.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/tripadvisor_2.woff2") format("woff2"),
+    url("../fonts/tripadvisor_2.woff") format("woff"),
+    url("../fonts/tripadvisor_2.ttf") format("truetype"),
+    url("../fonts/tripadvisor_2.svg#tripadvisor") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
