@@ -321,7 +321,7 @@ article {
 .btn-white {
   background-color: var(--block-bg-color);
   margin: 20px 20px;
-  padding: 10px 40px;
+  padding: 10px 20px;
   border-radius: 5px;
   border: solid 1px #d6d6d6;
   font-weight: bold;
