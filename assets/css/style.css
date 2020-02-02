@@ -49,6 +49,26 @@ p {
   color: #4a4a4a;
 }
 
+/* SIZING */
+
+.icon-s {
+  font-size: 25px;
+}
+.icon-m {
+  font-size: 35px;
+}
+
+/* COLORS */
+
+.darkgreen {
+  color: #06695c;
+}
+.green {
+  color: #078171;
+}
+.lightgreen {
+  color: #00a680;
+}
 /* FLEXBOX */
 
 .d-flex {
@@ -82,51 +102,44 @@ header {
   align-items: center;
 }
 
-.logo {
+header .logo,
+footer .logo {
   height: 35px;
 }
 
-.ham-menu {
+header .ham-menu {
   display: none;
 }
 
-.icons ul {
-  display: flex;
-  align-items: center;
-}
-
-.icons li:not(:last-child) {
-  font-size: 12px;
+header .icons li:not(:last-child) {
   text-align: center;
   padding-right: 20px;
 }
 
-.icons a {
+header .icons a {
   color: var(--main-text-color);
   text-decoration: none;
 }
 
-.icons a:hover {
+header .icons a:hover i {
   color: #06695c;
 }
 
-.icon {
-  font-size: 25px;
+header .icons .icon {
   justify-content: space-around;
 }
 
-.search {
+header .icons .search {
   font-size: 15px;
   padding-left: 10px;
   height: 30px;
 }
 
-.item-search {
-  font-size: 30px;
+header .icons .item-search {
   margin-right: 10px;
 }
 
-.btn {
+header .icons .btn {
   font-size: 14px;
   background-color: #078171;
   font-weight: bold;
@@ -136,7 +149,7 @@ header {
   border-radius: 5px;
 }
 
-.btn:hover {
+header .btn:hover {
   background-color: #06695c;
 }
 
@@ -151,11 +164,8 @@ header {
   background-image: url(/assets/img/paris.jpg);
   background-position: center;
   background-size: cover;
-  display: flex;
   margin-top: 60px;
   height: 250px;
-  justify-content: center;
-  align-items: center;
 }
 
 .town {
@@ -165,9 +175,6 @@ header {
   width: 120px;
   border-radius: 20px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
 
@@ -189,16 +196,10 @@ header {
 
 .alpha-bar {
   position: absolute;
-  display: flex;
-  align-items: center;
   top: 0px;
   background-color: rgba(255, 255, 255, 0.7);
   height: 40px;
   width: 100%;
-}
-
-.alpha-bar ul {
-  display: flex;
 }
 
 .alpha-bar li,
@@ -233,20 +234,10 @@ header {
   width: 80%;
 }
 
-.list-menu ul {
-  display: flex;
-  /* justify-content: space-around; */
-}
-
 .list-menu li {
   text-align: center;
   padding: 20px 0;
   flex: 1;
-}
-
-.green-icon {
-  color: #00a680;
-  font-size: 30px;
 }
 
 .list-menu a {
@@ -266,20 +257,17 @@ header {
 
 main {
   bottom: 50px;
-}
-main {
   margin-top: 100px;
 }
 
 main section {
   margin-right: 20px;
 }
-.right-firstblock {
-  margin-right: 0;
-}
-
 article {
   padding: 0 24px 10px;
+}
+.right-firstblock {
+  margin-right: 0;
 }
 
 .left-col,
@@ -341,7 +329,7 @@ article {
   margin-top: 5px;
   padding-bottom: 30px;
 }
-.left-secondblock i {
+.left-secondblock li i {
   font-size: 20px;
   padding-right: 15px;
   color: #06695c;
@@ -401,23 +389,12 @@ article {
 .secondblock a {
   padding-right: 24px;
 }
-.green {
-  color: #078171;
-  padding-right: 0;
-}
 
 .scroll li {
   flex-direction: column;
   position: relative;
 }
 
-.scroll li > i {
-  position: absolute;
-  right: 30px;
-  top: 2px;
-  font-size: 25px;
-  color: white;
-}
 .secondblock a {
   font-weight: bold;
   line-height: 24px;
@@ -428,15 +405,32 @@ article {
   text-decoration: underline;
 }
 .scroll {
-  display: flex;
   overflow: hidden;
   overflow-x: scroll;
 }
 .scroll::-webkit-scrollbar {
   display: none;
 }
+.scroll a i {
+  position: absolute;
+  right: 30px;
+  top: 2px;
+  font-size: 25px;
+  color: var(--main-text-color);
+}
+.scroll a:hover i:first-child {
+  color: red;
+  cursor: pointer;
+}
+.scroll a i:last-child {
+  position: absolute;
+  right: 30px;
+  top: 2px;
+  font-size: 25px;
+  color: white;
+}
+
 .rating i {
-  color: #078171;
   line-height: 24px;
 }
 
@@ -450,20 +444,17 @@ article {
   object-position: center;
 }
 .thirdblock .profil-pic {
-  display: flex;
   align-items: center;
   padding: 16px 10px 16px 24px;
 }
 .thirdblock .profil-pic > div {
   display: flex;
-  align-items: center;
 }
 .thirdblock .profil-pic img {
   border-radius: 50%;
 }
 .thirdblock h4 {
   padding-right: 4px;
-  /* margin-left: 19px; */
 }
 
 /* RIGHT */
